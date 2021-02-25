@@ -1,0 +1,61 @@
+// MONGO DB FIELDS
+
+// PROFILE DOCUMENT
+{
+    id: 1,
+    username: "mickaelsten",
+    password: xxxxx,
+    email: "msten75@gmail.com",
+    firstName: "Mickael",
+    lastName: "Sten",
+    description: "this is my biography",
+    signature: "This is my forum signature",
+    birthdate: yyyy-mm-dd, (optional)
+    profilePicture: img.jpg
+
+}
+
+// PRIVILEGE LEVELS DOCUMENT
+// Level 1 = admin, level 2 = super user, level 3 = user
+{
+    id: id, // Unique ID
+    userID: userID, // the user ID from PROFILE DOCUMENT
+    level: 1 // PRIVILEGE LEVEL
+}
+
+
+ // FORUMS DOCUMENT
+
+{
+    id: 1,
+    userId: userId, // The original poster of the post
+    title: "Title of the post",
+    body: "Body of the post",
+    postDate: yyyy-mm-dd, (original post date)
+    editDate: yyyy-mm-dd // the date the post was edited (if it was edited)
+    categoryId: categoryId (the thread belongs to a certain category)
+
+}
+
+
+// CATEGORIES DOCUMENT
+{
+
+    id: 1,
+    userID: 1, //Original creator of the category
+    title: "title of the category",
+    description: "Description of the category"
+    
+}
+
+// MESSAGING SYSTEM DOCUMENT
+
+{
+
+    id: 1
+    userIdSender: (the id of the person who sent the message)
+    userIdReceiver: (the id of the person who received the message)
+    topic: (topic of the message)
+    message: (the message)
+
+}

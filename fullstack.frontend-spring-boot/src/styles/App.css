@@ -1,0 +1,471 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+.header h4 {
+  padding-left: 40%;
+  display: block;
+}
+
+h1 {
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+img {
+  border-radius: 5px;
+  height: auto;
+  width: 10rem;
+}
+.tooltipBoundary span {
+  text-align: left !important;
+  display: block;
+  font-size: 18px;
+  border: 1px solid green;
+  color: white;
+  background-color: #333;
+  padding: 20px;
+}
+
+div {
+  text-align: center;
+}
+small {
+  display: block;
+}
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+table {
+  color: rgb(255, 255, 255) !important;
+}
+.login-page {
+  width: 360px;
+  padding: 1% 0 0;
+  margin: auto;
+}
+label {
+  display: block;
+  margin-top: 10px;
+  color: white;
+}
+
+.card-container.card {
+  max-width: 350px !important;
+  padding: 40px 40px;
+}
+.solid-divider {
+  border-top: 1px solid #bbb;
+}
+.card {
+  background-color: #315c6e;
+  padding: 20px 25px 30px;
+  margin: 25px auto 25px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.profile-img-card {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 10px;
+  display: block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.form {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto 20px;
+  padding: 15px;
+  text-align: center;
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+
+  width: 100%;
+  margin: 0 0 15px;
+  padding: 15px;
+
+  font-size: 14px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.form input:focus {
+  box-shadow: 0 0 20px #fff, 0 0 20px #fff;
+  border-radius: 10px;
+  opacity: 1;
+}
+.form span {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  display: inline-block;
+  background: #fff;
+  color: #000;
+  opacity: 0.8;
+  padding: 10px;
+  width: 100%;
+  margin: 0 0 15px;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 15px;
+}
+.form .message a {
+  color: #fff;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+
+.container:before,
+.container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #000000;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #ef3b3a;
+}
+
+.patient .form-control,
+.doctor .form-control {
+  border-color: rgba(38, 0, 255, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0 0 15px rgba(126, 239, 104, 0.6);
+  outline: 0 none;
+}
+
+/* ---------- the 2 doctors in the background ----------*/
+body {
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-rendering: optimizeLegibility;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* ---------- adding the space between header and the first card ----------*/
+.container-xl,
+.container-md {
+  margin-top: 125px;
+}
+
+/*---------------------------- Header of the pages ---------------------------- */
+.jumbotron {
+  background-color: #00000000;
+  padding: 1rem 1rem !important;
+}
+
+/*---------------------------- Header of the pages end ---------------------------- */
+
+/*---------------------------- Header Menu ---------------------------- */
+.bg-dark {
+  background-image: url(../images/Header.png);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  border-bottom: black;
+}
+/*---------------------------- Header Menu end ---------------------------- */
+
+/*---------------------------- Link styles ---------------------------- */
+
+a {
+  color: white !important;
+  font-size: 18px;
+}
+
+a:hover {
+  transition: all 0.5s ease-in-out;
+  font-size: 24px;
+}
+
+/* Links on the right side of the header */
+
+.navbar-dark .navbar-nav .nav-link {
+  margin-left: 20px;
+  color: rgb(255, 255, 255);
+  font-size: large;
+}
+
+/*---------------------------- Link syles end ---------------------------- */
+
+/*---------------------------- Logos ---------------------------- */
+.logo {
+  background-image: url(../images/Doctor.png);
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.logo2 {
+  background-image: url(../images/Bookings.png);
+  background-repeat: no-repeat;
+  width: 195px;
+  height: 55px;
+  margin: 0 auto;
+}
+
+.logo3 {
+  background-image: url(../images/apphistory.png);
+  background-repeat: no-repeat;
+  width: 270px;
+  height: 115px;
+  margin: 0 auto;
+}
+
+.logo4 {
+  background-image: url(../images/patientpage.png);
+  background-repeat: no-repeat;
+  width: 270px;
+  height: 85px;
+  margin: 0 auto;
+}
+
+.logo5 {
+  background-image: url(../images/Welcome.png);
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 80px;
+}
+/*---------------------------- Logos end ---------------------------- */
+
+/*---------------------------- Header Menu end ---------------------------- */
+
+.navbar-dark .navbar-brand {
+  color: rgb(0, 0, 0);
+}
+
+/*---------------------------- Want to create account link ---------------------------- */
+.create {
+  color: rgb(255, 255, 255) !important;
+}
+/*---------------------------- Want to create account link end ---------------------------- */
+
+.react-datepicker__time-list-item--disabled {
+  display: none;
+}
+
+/*---------------------------- Hamburger Menu ---------------------------- */
+
+/* this is background collor for the open the burger menu*/
+
+.erLTYI {
+  background: rgb(27, 27, 165) !important;
+  max-width: 30vh !important;
+  z-index: 1;
+  color: #fff !important;
+}
+
+/* this is links collor in the burger menu*/
+
+.erLTYI a {
+  color: white !important;
+}
+/* this is background collor for the closing of the burger menu
+*/
+.kajfWd {
+  background: #1a1738 !important;
+}
+
+/*---------------------------- Hamburger Menu end ---------------------------- */
+
+/*---------------------------- Media queries ---------------------------- */
+/* this hides the burger menu when the screen gets to big  */
+
+@media screen and (min-width: 800px) {
+  .hYDvSO {
+    display: none !important;
+  }
+}
+
+/* this hides the desktop links when the screen gets to small */
+@media screen and (max-width: 800px) {
+  .nav-link {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .kajfWd {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .logo {
+    margin-left: 70%;
+  }
+}
+
+/*---------------------------- Media queries end ---------------------------- */
+
+.table {
+  margin-top: 20px;
+}
+
+.failure-message {
+  margin-top: 20px;
+  width: 100%;
+  padding-bottom: 2px;
+}
+
+.failure-message span {
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgb(255, 0, 0);
+}
+.success-message {
+  margin-top: 20px;
+  width: 100%;
+  padding-bottom: 2px;
+}
+
+.success-message span {
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+.showCss {
+  display: block;
+}
+.hideCss {
+  display: none;
+}
+.showButton {
+  display: inline-block;
+}
+
+/*---------------------------- button styles---------------------------- */
+
+.btn {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  color: white !important;
+  background-color: blue;
+  border-radius: 2em;
+}
+
+.btn-success {
+  width: 160px;
+  height: 50px;
+  border-radius: 2em;
+}
+
+.btn-danger {
+  width: 160px;
+  height: 50px;
+  border-radius: 2em;
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: blue;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  border-radius: 2em;
+}
+.form button:hover,
+.form button:active {
+  background: green !important;
+}
+.form button:focus {
+  box-shadow: 0 0 20px #7bb1ff, 0 0 20px hsl(215, 100%, 74%);
+  background-color: #007bff;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+}
+
+/*---------------------------- button styles end ---------------------------- */
+
+/*---------------------------- Footer ---------------------------- */
+
+.footer {
+  background-image: url(../images/Footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: calc(150px);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer .footer-content {
+  border: red;
+  height: 350px;
+}
+
+.footer .footer-bottom {
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+}
+
+.padding {
+  height: 200px;
+}
+
+/*---------------------------- Footer end---------------------------- */
